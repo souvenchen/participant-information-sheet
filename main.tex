@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+
+\usepackage{eso-pic}
+\usepackage{graphicx}
+
+\begin{document}
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{%
+     \AtTextUpperLeft{%
+         \put(-30,-35){\includegraphics[scale=0.4]{InformaticsUni_CMYK.png}}%
+     }%
+}
+\raggedleft
+\vspace*{0.5cm}
+\endgroup
+
+\noindent
+\section*{Participant Information Sheet}
+\externalfigure[https://groups.inf.ed.ac.uk/cup/csarxiv/inflogo.png]
+\IfFileExists{inflogo.png}{}{\write18{wget https://groups.inf.ed.ac.uk/cup/csarxiv/inflogo.png}}
+\begin{table}[h]
+\begin{tabular}[width=0.6\textwidth]{|l|l|}
+\hline
+Project title:              & [[projectTitle]]\hspace{9.5cm} \\ \hline
+Principal investigator:     & [[piName]] \\ \hline
+Researcher collecting data: & [[userName]] \\ \hline
+Funder (if applicable):      & [[funderName]] \\ \hline
+\end{tabular}
+\end{table}
+This study was certified according to the Informatics Research Ethics Process, RT number [[rtNumber]]. Please take time to read the following information carefully. You should keep this page for your records. 
+\subsection*{Who are the researchers?}
+The research team who will have access to the data collected in this project includes the principal investigator Dr. [[piName]] and the researcher [[userName]].
+\subsection*{What is the purpose of the study?}
+[[purpose]]
+\subsection*{Why have I been asked to take part?}
+[[reason]]
+\subsection*{Do I have to take part?}
+No – participation in this study is entirely up to you. You can withdraw from the study at any time, without giving a reason. Your rights will not be affected. If you wish to withdraw, contact the PI. We will stop using your data in any publications or presentations submitted after you have withdrawn consent. However, we will keep copies of your original consent, and of your withdrawal request.
+\subsection*{What will happen if I decide to take part? }
+[[data]]
+\subsection*{Compensation. [only required if applicable]}
+[[compensation]]
+\subsection*{Are there any risks associated with taking part?}
+[[risks]]
+\subsection*{Are there any benefits associated with taking part?}
+[[benefits]]
+\subsection*{What will happen to the results of this study? }
+[[result]]
+\subsection*{Data protection and confidentiality.}
+Data protection and confidentiality.
+Your data will be processed in accordance with Data Protection Law.  All information collected about you will be kept strictly confidential. Your data will be referred to by a unique participant number rather than by name [amend as appropriate]. Your data will only be viewed by the researcher/research team [name everyone who will access the data here, including any research support staff who have access].  
+All electronic data will be stored on a password-protected encrypted computer, on the School of Informatics’ secure file servers, or on the University’s secure encrypted cloud storage services (DataShare, ownCloud, or Sharepoint) and all paper records will be stored in a locked filing cabinet in the PI’s office. Your consent information will be kept separately from your responses in order to minimise risk. 
+
+\subsection*{What are my data protection rights?}
+The University of Edinburgh is a Data Controller for the information you provide [amend if student PI].  You have the right to access information held about you. Your right of access can be exercised in accordance Data Protection Law. You also have other rights including rights of correction, erasure and objection. [make restrictions clear if e.g. accessing data would affect outcome of study] For more details, including the right to lodge a complaint with the Information Commissioner’s Office, please visit www.ico.org.uk. Questions, comments and requests about your personal data can also be sent to the University Data Protection Officer at dpo@ed.ac.uk. 
+\subsection*{Who can I contact?}
+If you have any further questions about the study, please contact the lead researcher, [[piname]]([[piemail]]) and the researcher [[username]]([[useremail]]). 
+If you wish to make a complaint about the study, please contact 
+inf-ethics@inf.ed.ac.uk. When you contact us, please provide the study title and detail the nature of your complaint.
+\subsection*{Updated information.}
+If the research project changes in any way, an updated Participant Information Sheet will be made available on https://web.inf.ed.ac.uk/infweb/research/study-updates. 
+\subsection*{Alternative formats.}
+To request this document in an alternative format, such as large print or on coloured paper, please contact [insert contact name and contact details such as email].
+\subsection*{General information.}
+For general information about how we use your data, go to: edin.ac/privacy-research
+\end{document}
